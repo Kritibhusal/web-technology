@@ -53,4 +53,30 @@ section{
     flex:30%;
     background-color: #a8a6a7;
 }
+.gallery-section{
+    padding: 20px;
+    background-color: #313230;
+    text-align: center;
+}
+.gallery-section h2{
+    margin-bottom: 20px;
+    color: #fff;
+}
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+.gallery-item{
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.gallery-item img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
