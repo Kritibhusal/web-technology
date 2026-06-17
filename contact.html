@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <body>
+        <header>
+        <h1><b>CONTACT ME</b></h1>
+    </header>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+    <section class="contact-section">
+        <div>
+            <h1>Registration</h1>
+            <form name="myForm" method="post" action="acc.html">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name"
+                placeholder="Enter your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="name"
+                placeholder="abc@gmail.com" required>
+
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+
+                <label for="Faculty">Faculty</label>
+                <select name="faculty" id="faculty">
+                    <option value="BCT" selected>BCT</option>
+                    <option value="BEI" selected> BEI</option>   
+                </select>
+
+                <label>Gender</label>
+                <div class="gender-group">
+                    <input type="radio" name="gender" id="male"
+                     value="male" checked>
+                     <label for="male">male</label>
+
+                     <input type="radio" name="gender" id="female"
+                     value="female" checked>
+                     <label for="female">female</label>
+                </div>
+
+                <label>Education</label>
+                <div class="education-group">
+                    <input type="checkbox" name="see" id="see"
+                     value="see" checked>
+                     <label for="see">SEE</label>
+
+                     <input type="checkbox" name="Plus2" id="plus2"
+                     value="plus2" checked>
+                     <label for="plus2">10+2</label>
+
+                     <input type="checkbox" name="above" id="above"
+                     value="above" checked>
+                     <label for="above">Above</label>
+                </div>
+
+                <label for="dob">Date of birth</label>
+                <input type="date" name="dob" id="dob">
+
+                <label for="photo"> Upload Photo</label>
+                <input type="file" name="photo" id="photo" accept="image/*">
+                <label for="remarks">Remarks</label>
+                <textarea name="remarks" id="remarks" 
+                cols="30" rows="10"></textarea>
+                <input type="submit" name="submit" value="Registration">
+                <input type="button" name="cancel" value="Cancel">
+                <input type="reset" name="reset" value="Reset">
+            </form>
+        </div>
+    </section>
+    
+</body>
+</html>
