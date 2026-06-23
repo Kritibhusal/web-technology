@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <script src="validation.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+     <script src="validation.js"></script>
     <title>Document</title>
     <body>
         <header>
@@ -17,7 +19,7 @@
     <section class="contact-section">
         <div>
             <h1>Registration</h1>
-            <form name="myForm" method="post" action="acc.html">
+            <form name="myForm" method="post" action="acc.html" onsubmit="return validateform();">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name"
                 placeholder="Enter your name" required>
@@ -69,7 +71,7 @@
                 <label for="remarks">Remarks</label>
                 <textarea name="remarks" id="remarks" 
                 cols="30" rows="10"></textarea>
-                <input type="submit" name="submit" value="Registration">
+                <input type="submit" name="submit" value="Submit">
                 <input type="button" name="cancel" value="Cancel">
                 <input type="reset" name="reset" value="Reset">
             </form>

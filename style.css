@@ -79,111 +79,93 @@ section{
     height: auto;
     display: block;
 }
-.contact-section{
-    padding: 20px;
-    background-color: #fff;
+.contact-section {
+    padding: 20 px;
 }
-
 .contact-section div{
     max-width: 600px;
-    margin: 0 auto;
+    margin:0 auto;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: #e2f1f4;
-}
+    box-shadow: #def4dc;
 
+}
 .contact-section h1{
     text-align: center;
-    color:#333;
+    color: #bd3535;
     margin-bottom: 25px;
-}
 
+}
 .contact-section label{
-    display: block;
-    margin-top: 15px;
+    display:block;
+    margin-top:15px;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #333;
+    color: #000000;
 }
-
+/*inputs*/
 .contact-section input[type="text"],
 .contact-section input[type="email"],
 .contact-section input[type="password"],
 .contact-section input[type="date"],
 .contact-section input[type="file"],
 .contact-section select,
-.contact-section textarea {
-    width: 100px;
+.contact-section textarea{
+
+    width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #bd3535 ;
     border-radius: 8px;
     box-sizing: border-box;
-    font-size: 15px;
+    font-size: 15px ;
     transition: 0.3s;
-    background-color: #fafafa;
+    background-color: rgb(255, 255, 255);
 }
-
-/*focus section */
 .contact-section input:focus,
 .contact-section select:focus,
-.contact-section textarea:focus {
-    outline: none;
-    border-color:#3e5bbb;
-    box-shadow: 0 0 5px rgba(68, 68, 68, 0.3);
+.contact-section textarea:focus{
+    outline: #000000;
+    border-color: aquamarine;
+    border-width: 2px;
+    box-shadow: #b3ff00;
 }
-
-
 .gender-group,
 .education-group{
     display: flex;
     align-items: center;
     gap: 15px;
     flex-wrap: wrap;
-    margin-top: 10px;
+    margin-top: 10px ;
     margin-bottom: 15px;
 }
-
 .gender-group label,
 .education-group label{
-  margin: 0;
-   font-weight: normal
+    margin: 0;
+    font-weight: normal;
 }
-
-
-
-/*text area*/
+/*texture*/
 .contact-section textarea{
     resize: vertical;
     min-height: 120px;
 }
-
 /*buttons*/
-
-.contact-section input[type="submit"],
-.contact-section input[type="reset"],
-.contact-section input[type="button"] {
-    background-color: #333;
+.contact-section input:[type="submit"],
+.contact-section select:[type="reset"],
+.contact-section textarea:[type="button"]{
+    background-color: #b3ff00;
     color: white;
-    border: none;
+    border:none;
     padding: 12px 24px;
     margin-top: 20px;
     margin-right: 10px;
-    border-radius: 8px;
+    border-radius: 8px ;
     cursor: pointer;
     font-size: 15px;
-    transition: 0.3s;
+    transition:0.3s;
 }
-
-.contact-section input[type="submit"]:hover,
-.contact-section input[type="reset"]:hover
-.contact-section input[type="button"]:hover{
-    background-color: #3e5bbb;
+.contact-section input:[type="submit"]:hover,
+.contact-section select:[type="reset"]:hover,
+.contact-section textarea:[type="button"]:hover{
+    background-color: aquamarine;
     transform: translateY(-2px);
 }
-
-
-
-
-
-
-
